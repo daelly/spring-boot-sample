@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: simple-web-sample
+
+server:
+  port: 8091
+
+
+sample:
+  prop1: The prop1
+  condition1: true
+  condition2: false
+  condition3: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+

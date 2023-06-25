@@ -10,6 +10,9 @@
     <modules>
         <module>simple-boot-sample</module>
         <module>aop-boot-sample</module>
+        <module>simple-web-sample</module>
+        <module>exception-handle-sample</module>
+        <module>actuator-sample</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -18,6 +21,8 @@
         <maven.compiler.target>8</maven.compiler.target>
         <lombok.version>1.18.24</lombok.version>
         <spring-boot.version>2.7.2</spring-boot.version>
+        <micrometer.version>1.11.1</micrometer.version>
+        <prometheus-simpleclient.version>0.16.0</prometheus-simpleclient.version>
     </properties>
 
     <dependencies>
@@ -28,6 +33,5 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 </project>
