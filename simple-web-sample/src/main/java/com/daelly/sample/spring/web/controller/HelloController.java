@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 @RequestMapping("/hello")
 public class HelloController {
 
-    @GetMapping("${greet.uri:#{T(com.daelly.sample.spring.web.utils.WebConst).DEFAULT_GREET_URI}}")
+    @GetMapping("async${greet.uri:#{T(com.daelly.sample.spring.web.utils.WebConst).DEFAULT_GREET_URI}}")
     public String greet(String name) {
         return "Hello, " + name;
     }

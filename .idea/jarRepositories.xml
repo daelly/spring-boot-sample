@@ -2,9 +2,24 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="nexus-public-repo" />
+      <option name="name" value="nexus public repository" />
+      <option name="url" value="https://nexus.yy.com/music/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yy-internal-snapshots" />
+      <option name="name" value="yy internal snapshots" />
+      <option name="url" value="https://nexus.yy.com/music/content/repositories/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yy-internal-Add_Leopard_Releases" />
+      <option name="name" value="yy internal Add_Leopard_Releases" />
+      <option name="url" value="https://nexus.yy.com/music/content/repositories/Add_Leopard_Releases" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -15,6 +30,21 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yy-internal-releases" />
+      <option name="name" value="yy internal releases" />
+      <option name="url" value="https://nexus.yy.com/music/content/repositories/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="public" />
+      <option name="name" value="YYEnt Public Repositories" />
+      <option name="url" value="https://nexus.yy.com/music/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="yy-internal-Add_Old_Snapshots" />
+      <option name="name" value="yy internal Add_Old_Snapshots" />
+      <option name="url" value="https://nexus.yy.com/music/content/repositories/Add_Old_Snapshots" />
     </remote-repository>
   </component>
 </project>

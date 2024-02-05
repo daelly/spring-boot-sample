@@ -8,11 +8,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="simple-web-sample" />
-        <module name="aop-boot-sample" />
-        <module name="exception-handle-sample" />
-        <module name="simple-boot-sample" />
+        <module name="muilt-aop-boot-sample" />
+        <module name="spring-bean-definition" />
+        <module name="spring-xml-sample" />
         <module name="actuator-sample" />
+        <module name="spring-event-sample" />
+        <module name="aop-boot-sample" />
+        <module name="import-annotation-sample" />
+        <module name="exception-handle-sample" />
+        <module name="spring-extend-sample" />
+        <module name="simple-boot-sample" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-yrpc-sample-api" target="1.8" />
+      <module name="spring-yrpc-sample-provider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-bean-definition" options="" />
+    </option>
   </component>
 </project>

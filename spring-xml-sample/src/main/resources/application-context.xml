@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="bean1" class="com.daelly.sample.spring.xml.bean.CustomBean">
+        <property name="name" value="Hello" />
+    </bean>
+
+    <bean id="userService" class="com.daelly.sample.spring.xml.service.UserService" />
+
+    <bean id="userServiceAspect" class="com.daelly.sample.spring.xml.aspect.UserServiceAspect" />
+
+    <bean id="cartService" class="com.daelly.sample.spring.xml.service.CartService" />
+
+    <bean id="cartServiceAspect" class="com.daelly.sample.spring.xml.aspect.CartServiceAspect" />
+
+    <aop:config proxy-target-class="true" expose-proxy="true">
+        <aop:pointcut id="userServicePointcut" expression="execution(* com.daelly.sample.spring.xml.service.UserService.*(..))"/>
+
+        <aop:advisor advice-ref="userServiceAspect" pointcut-ref="userServicePointcut" />
+    </aop:config>
+
+    <aop:config proxy-target-class="true" expose-proxy="false">
+        <aop:pointcut id="cartServicePointcut" expression="execution(* com.daelly.sample.spring.xml.service.CartService.*(..))"/>
+
+        <aop:advisor advice-ref="cartServiceAspect" pointcut-ref="cartServicePointcut" />
+    </aop:config>
+</beans>

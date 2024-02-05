@@ -5,7 +5,13 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class Bean4 {
 
-    public Bean4() {
-        log.info("Bean4 construct--------------------------------------------------------------------");
+    protected final JetConfig jetConfig;
+
+    public Bean4(JetConfig jetConfig) {
+        this.jetConfig = jetConfig;
+    }
+
+    public void printJet() {
+        log.info("jetConfig is:{}", jetConfig);
     }
 }

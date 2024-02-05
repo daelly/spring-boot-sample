@@ -13,6 +13,12 @@
         <module>simple-web-sample</module>
         <module>exception-handle-sample</module>
         <module>actuator-sample</module>
+        <module>muilt-aop-boot-sample</module>
+        <module>spring-bean-definition</module>
+        <module>spring-xml-sample</module>
+        <module>spring-extend-sample</module>
+        <module>spring-event-sample</module>
+        <module>import-annotation-sample</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -23,6 +29,7 @@
         <spring-boot.version>2.7.2</spring-boot.version>
         <micrometer.version>1.11.1</micrometer.version>
         <prometheus-simpleclient.version>0.16.0</prometheus-simpleclient.version>
+        <spring.version>5.3.22</spring.version>
     </properties>
 
     <dependencies>

@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-boot-sample
+
+custom:
+  configuration1:
+    enable: true
+  jet:
+    weight: 10
+    length: 200
+    name: fostress
+    sets:
+      - 23
+      - 99
+      - 35
+      - 31
+    taobo:
+      price: 998
+      count: 10
+      point: 45
+      sales:
+        - one
+        - two
+        - three
+        - four
